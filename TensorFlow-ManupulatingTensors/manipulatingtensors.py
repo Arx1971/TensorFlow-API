@@ -13,3 +13,12 @@ print("Primes: ", primes)
 
 ones = tf.ones([6], dtype=tf.int32)
 print("ones: ", ones)
+
+sum = tf.add(primes, ones)
+print("Sum of Primes and Ones: ", sum)
+
+result = tf.multiply(primes, primes)
+
+newResult = tf.subtract(result, 1)
+
+print("Result: ", newResult)
