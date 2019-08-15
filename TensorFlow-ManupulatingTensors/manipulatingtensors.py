@@ -56,8 +56,8 @@ print(newValue.numpy())
 tf.compat.v1.assign(newValue, [7])
 print(newValue.numpy())
 
-dice1 = tf.contrib.eager.Variable(tf.random.uniform([10, 1], minval=1, maxval=7, dtype=tf.int32))
-dice2 = tf.contrib.eager.Variable(tf.random.uniform([10, 1], minval=1, maxval=7, dtype=tf.int32))
+dice1 = tf.contrib.eager.Variable(tf.random.uniform([10, 1], minval=1, maxval=6, dtype=tf.int32))
+dice2 = tf.contrib.eager.Variable(tf.random.uniform([10, 1], minval=1, maxval=6, dtype=tf.int32))
 
 dicesum = tf.add(dice1, dice2)
 result_matrix = tf.concat(values=[dice1, dice2, dicesum], axis=1)
